@@ -56,7 +56,7 @@
 * element.style.backgroundColor = 'pink'
 * innerText and textContent vs. innerHTML
   * innerText = 'string': sets the inner text of a node
-  * innerHTML = '<h2>string</h2>': sets the inner HTML of a node
+  * innerHTML = ``<h2>string</h2>``: sets the inner HTML of a node
   * document.createTextNode('string'): creates a text node that you can append to another element
 * Append v. appendChild
   * Append = newer; less buggy
