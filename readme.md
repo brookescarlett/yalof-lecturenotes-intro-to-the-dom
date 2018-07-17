@@ -1,5 +1,4 @@
 ### The DOM and Developer Tools
-* 
 * What is the DOM?
   * Document Object Model
   * Object-oriented representation of the webpage, which allows programs to manipulate the properties and contents on a page  
