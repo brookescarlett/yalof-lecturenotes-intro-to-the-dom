@@ -22,17 +22,6 @@
   * You can look up the element in the prototype chain to know what methods are available to each node (or the constructor)
     * `NODE._proto_` or `console.dir(NODE)`
 
-### BOM
-* Everything that has to do with the Browser that's not related exactly to the DOM. The things that we can access about the Browser in our code
-* Whenever we type window in the console, it returns everything that we can do in the Browser as well as everything that we can do in the DOM
-* Examples:
-  * `console` object
-  * `navigator` object
-  * `location` object
-  * `history` object
-  * `localStorage` object
-  * timers
-
 ### Read
 * Traversing the DOM
   * Selectors are part of the element class; we can use them on any element
