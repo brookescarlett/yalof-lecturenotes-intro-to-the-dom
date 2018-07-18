@@ -1,2 +1,2 @@
-let container = document.getElementById('container')
-container.style.backgroundColor = 'pink'
+// let container = document.getElementById('container')
+// container.style.backgroundColor = 'pink'

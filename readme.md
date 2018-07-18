@@ -16,6 +16,12 @@
   * These are all objects *related* to one another
   * Each of these nodes has properties that can be manipulated
 
+### CSS Selectors
+* Element interfaces
+  * Different elements support different properties. These properties are just objects; key-value pairs where you can reassign the values to change the node.
+  * You can look up the element in the prototype chain to know what methods are available to each node (or the constructor)
+    * `NODE._proto_` or `console.dir(NODE)`
+
 ### BOM
 * Everything that has to do with the Browser that's not related exactly to the DOM. The things that we can access about the Browser in our code
 * Whenever we type window in the console, it returns everything that we can do in the Browser as well as everything that we can do in the DOM
@@ -26,12 +32,6 @@
   * `history` object
   * `localStorage` object
   * timers
-
-### CSS Selectors
-* Element interfaces
-  * Different elements support different properties. These properties are just objects; key-value pairs where you can reassign the values to change the node.
-  * You can look up the element in the prototype chain to know what methods are available to each node (or the constructor)
-    * `NODE._proto_` or `console.dir(NODE)`
 
 ### Read
 * Traversing the DOM
@@ -79,7 +79,6 @@
   * Delete at least 2 elements
   * Modify elements (e.g., replace image url, change text, change CSS)
   * Create new elements and add to page
-  * Encourage students to think programmatically about the DOM by giving them problems that involve iteration and the use of multiple CSS selectors
   * Change all instances of one word
   * Replace all images on only a certain portion of the DOM
   * Change every other header

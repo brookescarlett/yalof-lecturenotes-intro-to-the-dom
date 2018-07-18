@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>My 90s Music Fanpage</title>
-    <script type="text/javascript" src='./index.js'></script>
   </head>
   <body>
     <div id="container" style='text-align:center'>
@@ -11,10 +10,12 @@
         <h1>This Is My 90s Music Fanpage!!!</h1>
         <h2>Here are some of my favorite bands: </h2>
 
-        <p class="band-name">Red Hot Chilli Peppers</p>
-        <p class="band-name">Weezer</p>
-        <p class="band-name">No Doubt</p>
-        <p class="band-name">Green Day</p>
+        <div class="band-list">
+          <p class="band-name" id="red">Red Hot Chilli Peppers</p>
+          <p class="band-name" id="weezer">Weezer</p>
+          <p class="band-name" id="no-doubt">No Doubt</p>
+          <p class="band-name" id="green-day">Green Day</p>
+        </div>
 
       </div>
 
@@ -25,5 +26,6 @@
       </div>
 
     </div>
+    <script type="text/javascript" src='./index.js'></script>
   </body>
 </html>
