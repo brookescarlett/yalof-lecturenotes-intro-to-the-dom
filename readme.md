@@ -5,12 +5,11 @@
   * Document Object Model
   * Object-oriented representation of the webpage, which allows programs to manipulate the properties and contents on a page  
   * When HTML is compiled (done through an engine that is unique to every browser), the DOM is created based on that HTML
-    * You write code that interacts with Browser APIs: Collection of methods that you can call on. Defined, standardized way to interact with the DOM. Everything that's given to us by the document is given to us by the DOM API.
-    * Code written adhering to JS Standard Library
-    * Code compiled by a JS Engine (Chrome uses v8)
-    * Browser turns strings into objects, converts to Browser code
-  * Javascript is a language created to manipulate the DOM
-
+    * Browser Code
+    * JavaScript Engine
+    * JavaScript Standard Library
+    * Browser APIs
+    * Your code!
 * What's the structure of the DOM?
   * An upside-down tree; where the root is the Document
   * Every node on the tree (except the root) has parent and child elements
@@ -32,7 +31,7 @@
 * Element interfaces
   * Different elements support different properties. These properties are just objects; key-value pairs where you can reassign the values to change the node.
   * You can look up the element in the prototype chain to know what methods are available to each node (or the constructor)
-    * `_proto_`
+    * `NODE._proto_` or `console.dir(NODE)`
 
 ### Read
 * Traversing the DOM

@@ -1,3 +1,2 @@
-document.addEventListener('DOMContentLoaded', function(){
-  console.log('hey man im here')
-})
+let container = document.getElementById('container')
+container.style.backgroundColor = 'pink'

@@ -9,6 +9,14 @@
     * Browser turns strings into objects, converts to Browser code
   * Javascript is a language created to manipulate the DOM
 
+
+
+  * You write code that interacts with Browser APIs: Collection of methods that you can call on. Defined, standardized way to interact with the DOM. Everything that's given to us by the document is given to us by the DOM API.
+  * Code written adhering to JS Standard Library
+  * Code compiled by a JS Engine (Chrome uses v8)
+  * Browser turns strings into objects, converts to Browser code
+
+  
 * What's the structure of the DOM?
   * An upside-down tree; where the root is the Document
   * Every node on the tree (except the root) has parent and child elements
@@ -103,3 +111,23 @@
   * Remove from page
 * Single Page Applications: don't need to press refresh, if I want to go from showing a user one page to the next, you just change what you display on page using dynamic JS methods
   * Don't need to refresh to see the next page, to get more information
+
+
+## Lecture Plan :
+1. Open up index.html, ask students what's the DOM
+2. Show page source; this is what is sent over the wire, over the internet to our Browser. Once this get's to our Browser the magic happens. The Browser reads it and converts it to the DOM.
+3. DOM can be seen inside of the 'Elements' tab of the developer tools. Everything there is not what we've written, not what we've sent across the wire, but how our code has been interpreted by the Browser. This is a visual representation of the DOM. This shows what's on our page currently.
+4. DOM stands for Document Object Model. When it's sent across the wire, the browser will read the string and convert all of the tags into JS objects (there's a constructor for each one of the tags)
+5. Each one of the HTML tags converted into objects and then given to us as a property of the document object. Document object is the property that we'll use to do all of our DOM manipulation
+6. What's the structure of the DOM?
+7. Select the document; show that it has children; change the backgroundColor of a child... do this all through console.dir(NODE)
+8. Okay, but there's a much more straightforward way to do that (go through all the ways of selecting)
+
+9. HOW THIS ALL WORKS:
+* How does JavaScript work in the browser?
+  * Code for the browser written in C/C++ or some low level language
+  * On top of that, we have the JS engine. Also written in a low level language, and this is what supports our ability to use JS. The browser itself does not know how to interpret JS, this is an add-on to the browser. (Chrome uses a v8 engine)
+  * Many browsers have different engines, but v8 is shared across a few. Each engine has it's own implementation, meaning that each engine supports its own type of JS. So there's not one type, there are many interpretations.
+  * Engine tells us what is included in the JS standard library. Anything that we can do in JS is given to us in this standard library.
+  * On top of that, we have Browser APIs. The collection of methods that you can call on an array is an API for that array. Here, we are using the DOM API. That means that everything that's given to us by this document is given to us by the DOM API.
+  * API: defined way to interact with something. We are used to using web apis, a website that we can interact with: defined set of websites and URLs that we can interact with. This is a defined way to interact with the document. Example: when we are defining a class and its methods, we are defining an API for that class.  
